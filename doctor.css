@@ -1,0 +1,111 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+/* Doctor Profiles Section */
+.doctor-profiles {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.profiles-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Profile Card Styling */
+.profile-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;  /* Adjusted the width for smaller profiles */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Profile Image Styling */
+.profile-card img {
+    width: 120px;  /* Smaller circle image */
+    height: 120px;
+    border-radius: 50%;  /* Ensures the image is circular */
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.profile-card h3 {
+    color: #004080;
+    margin-bottom: 10px;
+}
+
+.specialty {
+    color: #0070b0;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.bio {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.contact {
+    color: #004080;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Media Query for screens less than 768px wide */
+@media (max-width: 768px) {
+    /* Adjust services section layout */
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Make each service card take up full width on smaller screens */
+    .service-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Reduce image sizes for smaller screens */
+    .service-image, .service-icon {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    /* Adjust the service list and text sizes */
+    .service-list li {
+        font-size: 14px;
+    }
+
+    .contact-info {
+        font-size: 13px;
+    }
+
+    /* Adjust padding and font size for footer */
+    footer {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,188 @@
+/* Main Content Section */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 10px;
+    background-color: #f7f7f7;
+}
+
+.image-placeholder img {
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.text-content {
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.text-content h4 {
+    font-size: 1.8em;
+    color: #014286;
+    margin-bottom: 10px;
+}
+
+.text-content h5 {
+    font-size: 1.5em;
+    color: #36bd41;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Branches Section */
+#branches {
+    padding: 50px 10px;
+    background-color: #e6f7ff;
+}
+
+#branches h2 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.branch {
+    background-color: #fff;
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.branch:hover {
+    transform: translateY(-5px);
+}
+
+.branch h3 {
+    font-size: 1.8em;
+    color: #014286;
+    margin-bottom: 20px;
+}
+
+.branch p {
+    font-size: 1.1em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.responsive-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.map {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Hospital Summary Section */
+#summary {
+    padding: 40px 10px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+#summary h2 {
+    font-size: 2.5em;
+    color: #014286;
+    margin-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #014286;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e6f7ff;
+}
+
+tfoot {
+    background-color: #f1f1f1;
+    font-size: 1.1em;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1em;
+}
+
+a {
+    color: #ff3333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 20px;
+    }
+    
+    .text-content {
+        padding: 10px;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+        width: 100%;
+    }
+    
+    thead {
+        display: none;
+    }
+    
+    tr {
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    
+    td {
+        display: block;
+        text-align: left;
+        font-size: 1.1em;
+        padding: 10px 0;
+    }
+    
+    td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+    }
+}
